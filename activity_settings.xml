@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lila Settings"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color Theme"/>
+        <RadioGroup
+            android:id="@+id/rgColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbPink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pink"/>
+            <RadioButton android:id="@+id/rbPurple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Purple"/>
+            <RadioButton android:id="@+id/rbYellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yellow"/>
+        </RadioGroup>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginVertical="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position Preset"/>
+        <RadioGroup
+            android:id="@+id/rgPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bottom"/>
+            <RadioButton android:id="@+id/rbOnIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="On Icon"/>
+            <RadioButton android:id="@+id/rbKeyboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keyboard Bar"/>
+        </RadioGroup>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDD" android:layout_marginVertical="16dp"/>
+
+        <Switch
+            android:id="@+id/switchPrank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prank Mode (Letter Tapping)"/>
+
+        <Button
+            android:id="@+id/btnBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whitelist Battery Optimization"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
